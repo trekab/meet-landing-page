@@ -198,7 +198,7 @@ footer {
   background-size: cover;
   color: var(--white);
   text-align: center;
-  background: radial-gradient(ellipse, #4d96a996 135%, transparent),
+  background: radial-gradient(ellipse, #4d96a9c7 135%, transparent),
     url("./assets/desktop/image-footer.jpg") center/cover no-repeat border-box;
 }
 
