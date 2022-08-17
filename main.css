@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+
+:root {
+  --cyan: #4d96a9;
+  --purple: #855fb1;
+  --black: #28283d;
+  --grey: #87879d;
+  --cyan-light: #8fe3f9;
+  --purple-light: #d9b8ff;
+  --white: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("./assets/desktop/image-hero-left.png"),
+    url("./assets/desktop/image-hero-right.png");
+  background-repeat: no-repeat;
+  background-position: left 100px, right 100px;
+  background-size: 153px auto;
+}
+
+.logo {
+  display: block;
+  width: 119px;
+  margin: 48px auto;
+  margin-bottom: 255px;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: 900;
+  max-width: 292px;
+  font-size: 40px;
+  line-height: 44px;
+  color: var(--black);
+  margin: 24px auto;
+}
+
+header p {
+  max-width: 327px;
+  margin: 24px auto;
+  text-align: center;
+  color: var(--grey);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+header .btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download {
+  text-decoration: none;
+  width: 193px;
+  height: 58px;
+  background-color: var(--cyan);
+  border-radius: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--white);
+}
+
+.download:hover {
+  background-color: #71c0d4;
+}
+
+.download span {
+  margin: 4px;
+  color: var(--cyan-light);
+}
+
+.about {
+  text-decoration: none;
+  width: 139px;
+  height: 58px;
+  margin: 16px;
+  border-radius: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--purple);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--white);
+}
+
+.about:hover {
+  background-color: #b18bdd;
+}
+
+.section-number {
+  width: 56px;
+  height: 56px;
+  border-radius: 29px;
+  margin: auto;
+  margin-top: 148px;
+  border: 1px solid var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--grey);
+}
+
+.hero-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 143px 143px;
+  gap: 24px;
+  width: 80%;
+  margin: 64px auto;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.first-image,
+.second-image,
+.third-image,
+.fourth-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.first-image {
+  background-image: url("./assets/desktop/image-woman-in-videocall.jpg");
+}
+
+.second-image {
+  background-image: url("./assets/desktop/image-women-videochatting.jpg");
+}
+
+.third-image {
+  background-image: url("./assets/desktop/image-men-in-meeting.jpg");
+}
+
+.fourth-image {
+  background-image: url("./assets/desktop/image-man-texting.jpg");
+}
+
+main .slogan {
+  max-width: 275px;
+  margin: auto;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--cyan);
+  text-align: center;
+}
+
+main h1 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--black);
+  margin: 24px auto;
+  max-width: 327px;
+}
+
+main .description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--grey);
+  max-width: 327px;
+  margin: auto;
+}
+
+footer {
+  background-image: url("./assets/desktop/image-footer.jpg");
+  width: 100%;
+  height: 428px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  text-align: center;
+  background: radial-gradient(ellipse, var(--cyan) 15%, transparent),
+    url("./assets/desktop/image-footer.jpg") center/cover no-repeat border-box;
+}
+
+footer .section-number {
+  background-color: var(--white);
+  position: relative;
+  top: -25px;
+}
+
+footer h1 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  max-width: 327px;
+  margin: auto;
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+footer p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  max-width: 327px;
+  margin: auto;
+}
+
+footer .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-weight: 900;
+  line-height: 26px;
+  width: 193px;
+  height: 58px;
+  border-radius: 29px;
+  background-color: var(--purple);
+  margin: 48px auto;
+  text-decoration: none;
+}
+
+footer .btn:hover {
+  background-color: #b18bdd;
+}
+
+footer .btn span {
+  margin: 4px;
+  color: #d9b8ff;
+}
+
+@media (min-width: 576px) {
+  header {
+    background-size: 394px auto;
+  }
+
+  header h1 {
+    font-size: 48px;
+    max-width: 339px;
+    line-height: 48px;
+    margin-top: 450px;
+  }
+
+  header p {
+    max-width: 457px;
+  }
+
+  header .btns {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero-images {
+    display: flex;
+    max-width: 689px;
+  }
+
+  .hero-image {
+    width: 164px;
+    height: 156px;
+  }
+
+  main h1 {
+    font-size: 40px;
+    line-height: 44px;
+    max-width: 455px;
+  }
+
+  main .description {
+    max-width: 573px;
+  }
+
+  footer h1 {
+    font-size: 40px;
+    line-height: 44px;
+    max-width: 457px;
+    margin-bottom: 32px;
+  }
+
+  footer p {
+    max-width: 573px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    margin-bottom: 0;
+  }
+  header h1 {
+    margin-top: 116px;
+    font-size: 64px;
+    max-width: 455px;
+    line-height: 64px;
+  }
+
+  header p {
+    font-size: 18px;
+    max-width: 540px;
+  }
+
+  .hero-images {
+    max-width: 1110px;
+  }
+
+  .hero-image {
+    width: 255px;
+    height: 242px;
+  }
+
+  main .description {
+    max-width: 540px;
+    font-size: 18px;
+  }
+
+  footer {
+    height: 308px;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  }
+  footer h1 {
+    text-align: start;
+    margin-left: 0;
+    max-width: 350px;
+  }
+
+  footer p {
+    max-width: 350px;
+    text-align: start;
+  }
+
+  footer .btn {
+    margin-right: 0;
+  }
+}
