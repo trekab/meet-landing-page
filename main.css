@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+
+:root {
+  --cyan: #4d96a9;
+  --purple: #855fb1;
+  --black: #28283d;
+  --grey: #87879d;
+  --cyan-light: #8fe3f9;
+  --purple-light: #d9b8ff;
+  --white: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("./assets/desktop/image-hero-left.png"),
+    url("./assets/desktop/image-hero-right.png");
+  background-repeat: no-repeat;
+  background-position: left 100px, right 100px;
+  background-size: 153px auto;
+}
+
+.logo {
+  display: block;
+  width: 119px;
+  margin: 48px auto;
+  margin-bottom: 255px;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: 900;
+  max-width: 292px;
+  font-size: 40px;
+  line-height: 44px;
+  color: var(--black);
+  margin: 24px auto;
+}
+
+header p {
+  max-width: 327px;
+  margin: 24px auto;
+  text-align: center;
+  color: var(--grey);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+header .btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download {
+  text-decoration: none;
+  width: 193px;
+  height: 58px;
+  background-color: var(--cyan);
+  border-radius: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--white);
+}
+
+.download:hover {
+  background-color: #71c0d4;
+}
+
+.download span {
+  margin: 4px;
+  color: var(--cyan-light);
+}
+
+.about {
+  text-decoration: none;
+  width: 139px;
+  height: 58px;
+  margin: 16px;
+  border-radius: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--purple);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--white);
+}
+
+.about:hover {
+  background-color: #b18bdd;
+}
+
+@media (min-width: 576px) {
+  header {
+    background-size: 394px auto;
+  }
+
+  header h1 {
+    font-size: 48px;
+    max-width: 339px;
+    line-height: 48px;
+    margin-top: 450px;
+  }
+
+  header p {
+    max-width: 457px;
+  }
+
+  header .btns {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    margin-bottom: 0;
+  }
+  header h1 {
+    margin-top: 116px;
+    font-size: 64px;
+    max-width: 455px;
+    line-height: 64px;
+  }
+
+  header p {
+    font-size: 18px;
+    max-width: 540px;
+  }
+}
