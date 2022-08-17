@@ -198,9 +198,8 @@ footer {
   background-size: cover;
   color: var(--white);
   text-align: center;
-  /* background-color: var(--cyan);
-  mix-blend-mode: normal;
-  opacity: 0.1; */
+  background: radial-gradient(ellipse, var(--cyan) 15%, transparent),
+    url("./assets/desktop/image-footer.jpg") center/cover no-repeat border-box;
 }
 
 footer .section-number {
