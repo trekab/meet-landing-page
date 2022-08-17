@@ -102,6 +102,93 @@ header .btns {
   background-color: #b18bdd;
 }
 
+.section-number {
+  width: 56px;
+  height: 56px;
+  border-radius: 29px;
+  margin: auto;
+  margin-top: 148px;
+  border: 1px solid var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--grey);
+}
+
+.hero-images {
+  display: grid;
+  grid-template-columns: 151px 151px;
+  grid-template-rows: 143px 143px;
+  gap: 24px;
+  width: 327px;
+  margin: 64px auto;
+}
+
+.hero-image {
+  width: 151px;
+  height: 143px;
+  border-radius: 10px;
+}
+
+.first-image,
+.second-image,
+.third-image,
+.fourth-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.first-image {
+  background-image: url("./assets/desktop/image-woman-in-videocall.jpg");
+}
+
+.second-image {
+  background-image: url("./assets/desktop/image-women-videochatting.jpg");
+}
+
+.third-image {
+  background-image: url("./assets/desktop/image-men-in-meeting.jpg");
+}
+
+.fourth-image {
+  background-image: url("./assets/desktop/image-man-texting.jpg");
+}
+
+main .slogan {
+  max-width: 275px;
+  margin: auto;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--cyan);
+  text-align: center;
+}
+
+main h1 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--black);
+  margin: 24px auto;
+  max-width: 327px;
+}
+
+main .description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--grey);
+  max-width: 327px;
+  margin: auto;
+}
+
 @media (min-width: 576px) {
   header {
     background-size: 394px auto;
@@ -122,6 +209,26 @@ header .btns {
     flex-direction: row;
     justify-content: center;
   }
+
+  .hero-images {
+    display: flex;
+    width: 689px;
+  }
+
+  .hero-image {
+    width: 164px;
+    height: 156px;
+  }
+
+  main h1 {
+    font-size: 40px;
+    line-height: 44px;
+    max-width: 455px;
+  }
+
+  main .description {
+    max-width: 573px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -138,5 +245,19 @@ header .btns {
   header p {
     font-size: 18px;
     max-width: 540px;
+  }
+
+  .hero-images {
+    width: 1110px;
+  }
+
+  .hero-image {
+    width: 255px;
+    height: 242px;
+  }
+
+  main .description {
+    max-width: 540px;
+    font-size: 18px;
   }
 }
