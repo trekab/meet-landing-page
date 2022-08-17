@@ -189,6 +189,69 @@ main .description {
   margin: auto;
 }
 
+footer {
+  background-image: url("./assets/desktop/image-footer.jpg");
+  width: 100%;
+  height: 428px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  text-align: center;
+  /* background-color: var(--cyan);
+  mix-blend-mode: normal;
+  opacity: 0.1; */
+}
+
+footer .section-number {
+  background-color: var(--white);
+  position: relative;
+  top: -25px;
+}
+
+footer h1 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  max-width: 327px;
+  margin: auto;
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+footer p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  max-width: 327px;
+  margin: auto;
+}
+
+footer .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-weight: 900;
+  line-height: 26px;
+  width: 193px;
+  height: 58px;
+  border-radius: 29px;
+  background-color: var(--purple);
+  margin: 48px auto;
+  text-decoration: none;
+}
+
+footer .btn:hover {
+  background-color: #b18bdd;
+}
+
+footer .btn span {
+  margin: 4px;
+  color: #d9b8ff;
+}
+
 @media (min-width: 576px) {
   header {
     background-size: 394px auto;
@@ -229,6 +292,17 @@ main .description {
   main .description {
     max-width: 573px;
   }
+
+  footer h1 {
+    font-size: 40px;
+    line-height: 44px;
+    max-width: 457px;
+    margin-bottom: 32px;
+  }
+
+  footer p {
+    max-width: 573px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -259,5 +333,27 @@ main .description {
   main .description {
     max-width: 540px;
     font-size: 18px;
+  }
+
+  footer {
+    height: 308px;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  }
+  footer h1 {
+    text-align: start;
+    margin-left: 0;
+    max-width: 350px;
+  }
+
+  footer p {
+    max-width: 350px;
+    text-align: start;
   }
 }
